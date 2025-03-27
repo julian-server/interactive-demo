@@ -1,14 +1,109 @@
 body {
+    font-family: sans-serif;
     margin: 0;
-    overflow: hidden;
-    background-color: black;
+    padding: 0;
 }
 
-#interactive-element {
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    background-color: white;
-    border-radius: 50%; /* Makes it a circle */
-    pointer-events: none; /* Prevents the circle from interfering with mouse events */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 20px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.find-opportunities {
+    padding: 40px 0;
+}
+
+.find-opportunities form {
+    display: flex;
+    flex-direction: column;
+}
+
+.find-opportunities label {
+    margin-top: 10px;
+}
+
+.find-opportunities input,
+.find-opportunities textarea,
+.find-opportunities select {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.find-opportunities button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-col {
+    width: 48%;
+}
+
+.about-canada-connect,
+.how-it-works {
+    padding: 40px 0;
+    background-color: #f4f4f4;
+}
+
+.steps {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.step {
+    text-align: center;
+}
+
+.step-number {
+    background-color: #007bff;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 10px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
 }

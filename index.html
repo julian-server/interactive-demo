@@ -3,11 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interactive Demo</title>
+    <title>CanadaConnect Replication</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="interactive-element"></div>
-    <script src="script.js"></script>
+    <header>
+        <div class="container">
+            <h1>CanadaConnect</h1>
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">How It Works</a>
+            </nav>
+        </div>
+    </header>
+    <section class="find-opportunities">
+        <div class="container">
+            <h2>Find Canadian Sales Opportunities</h2>
+            <p>Enter your business information below to discover potential customers across Canada.</p>
+            <form>
+                <label for="companyName">Company Name</label>
+                <input type="text" id="companyName" name="companyName">
+                <label for="websiteURL">Website URL</label>
+                <input type="url" id="websiteURL" name="websiteURL" placeholder="https://www.example.com">
+                <label for="productDescription">Product / Service Description</label>
+                <textarea id="productDescription" name="productDescription"></textarea>
+                <div class="form-row">
+                    <div class="form-col">
+                        <label for="industry">Industry</label>
+                        <select id="industry" name="industry">
+                            <option value="">Select your industry</option>
+                            </select>
+                    </div>
+                    <div class="form-col">
+                        <label for="targetProvinces">Target Provinces</label>
+                        <select id="targetProvinces" name="targetProvinces" multiple>
+                            <option value="bc">British Columbia</option>
+                            <option value="ab">Alberta</option>
+                            <option value="sk">Saskatchewan</option>
+                            <option value="mb">Manitoba</option>
+                            <option value="on">Ontario</option>
+                            <option value="qc">Quebec</option>
+                            <option value="nb">New Brunswick</option>
+                        </select>
+                    </div>
+                </div>
+                <label for="uniqueSellingPoints">Unique Selling Points (Optional)</label>
+                <textarea id="uniqueSellingPoints" name="uniqueSellingPoints" placeholder="What makes your product / service unique?"></textarea>
+                <button type="submit">Find Opportunities</button>
+            </form>
+        </div>
+    </section>
+    <section class="about-canada-connect">
+        <div class="container">
+            <h2>About CanadaConnect</h2>
+            <p>
+                CanadaConnect is a specialized tool designed to help Vancouver Island businesses identify sales opportunities and potential customers across Canada.
+                By analyzing your products and services, we match you with prospective buyers in your target provinces.
+                As interprovincial trade barriers continue to fall and Canadian businesses look to strengthen domestic supply chains,
+                CanadaConnect provides the tools you need to capitalize on these opportunities.
+            </p>
+        </div>
+    </section>
+    <section class="how-it-works">
+        <div class="container">
+            <h2>How It Works</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Enter Your Information</h3>
+                    <p>Provide details about your business, products, and target markets.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Automated Analysis</h3>
+                    <p>Our system analyzes your information to understand your offerings.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Discover Opportunities</h3>
+                    <p>Review matched prospects with contact information and relevance scores.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>CanadaConnect - Helping Vancouver Island businesses expand across Canada.</p>
+            <p>© 2025 PitchKit.ca | Demo Version</p>
+        </div>
+    </footer>
 </body>
 </html>
